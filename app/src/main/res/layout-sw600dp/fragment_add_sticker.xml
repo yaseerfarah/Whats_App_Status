@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.AddSticker"
+    android:background="@mipmap/unnamed">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/logo_view_height"
+            android:id="@+id/logo_view"
+            android:background="@mipmap/logo_view"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cat_name"
+            android:layout_below="@+id/logo_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20sp"
+            android:text="@string/my_sticker"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/add_sticker_cardview"
+            android:layout_height="@dimen/add_sticker_cardview"
+            android:id="@+id/tray_card"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cat_name"
+            android:elevation="8dp"
+            app:cardCornerRadius="2dp"
+            app:cardBackgroundColor="@color/tra_black"
+
+            android:layout_marginTop="40dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tray_icon_image"
+                    android:clickable="false"
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:background="@drawable/ic_image_black_24dp"
+                    android:id="@+id/tray_icon"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tray_card"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/add_sticker_cardview"
+                android:layout_height="@dimen/add_sticker_cardview"
+                android:id="@+id/st_1"
+
+                android:layout_margin="10dp"
+                app:cardCornerRadius="2dp"
+                android:clickable="true"
+                android:elevation="8dp"
+                app:cardBackgroundColor="@color/tra_black"
+
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:clickable="false"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:clickable="false"
+                        android:layout_height="match_parent"
+                        android:id="@+id/st_1_image"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="false"
+                        android:background="@drawable/ic_image_black_24dp"
+                        android:id="@+id/st_1_icon"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/add_sticker_cardview"
+                android:layout_height="@dimen/add_sticker_cardview"
+                android:id="@+id/st_2"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="2dp"
+                android:elevation="8dp"
+                app:cardBackgroundColor="@color/tra_black"
+
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:clickable="false"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:clickable="false"
+                        android:layout_height="match_parent"
+                        android:id="@+id/st_2_image"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_image_black_24dp"
+                        android:id="@+id/st_2_icon"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/add_sticker_cardview"
+                android:layout_height="@dimen/add_sticker_cardview"
+                android:id="@+id/st_3"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="2dp"
+                android:elevation="8dp"
+                app:cardBackgroundColor="@color/tra_black"
+
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:clickable="false"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:clickable="false"
+                        android:layout_height="match_parent"
+                        android:id="@+id/st_3_image"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:clickable="false"
+                        android:id="@+id/st_3_icon"
+                        android:background="@drawable/ic_image_black_24dp"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_to_whatsappَ"
+
+            android:textColor="@android:color/white"
+            android:id="@+id/to_whatsapp"
+            android:background="@drawable/dimmable_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/round_button_margin_bottom"
+            android:layout_marginRight="@dimen/round_button_margin_right"
+
+            android:padding="10dp"
+            />
+
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prog"
+            android:elevation="10dp"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.CropImage"
+    android:background="@android:color/white">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <com.isseiaoki.simplecropview.CropImageView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cropImageView"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:scv_background_color="@android:color/white"
+            custom:scv_overlay_color="@color/tra_black"
+            custom:scv_frame_color="@color/colorPrimaryDark"
+            custom:scv_handle_color="@color/colorPrimaryDark"
+            custom:scv_guide_color="@color/colorPrimaryDark"
+            custom:scv_guide_show_mode="show_always"
+            custom:scv_handle_show_mode="show_always"
+            custom:scv_handle_size="14dp"
+            custom:scv_touch_padding="8dp"
+            custom:scv_min_frame_size="50dp"
+            custom:scv_frame_stroke_weight="1dp"
+            custom:scv_guide_stroke_weight="1dp"
+
+            custom:scv_initial_frame_scale="1.0"
+            custom:scv_animation_enabled="true"
+            custom:scv_animation_duration="200"
+            custom:scv_handle_shadow_enabled="true"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/edit"
+
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            >
+
+
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/c_sq"
+                android:layout_toRightOf="@+id/r_left"
+                android:background="@drawable/round_button_square"
+                android:layout_marginLeft="40dp"
+
+                />
+
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/c_fr"
+                android:background="@drawable/round_button_freecut"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/c_cr"
+                android:layout_toLeftOf="@+id/r_right"
+                android:background="@drawable/round_button_circle"
+                android:layout_marginRight="40dp"
+
+                />
+
+
+
+
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/gal"
+                android:background="@drawable/round_button"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/round_button_margin_right"
+
+                />
+
+
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/done"
+                android:background="@drawable/round_button_check"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/round_button_margin_right"
+
+                />
+
+
+
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/r_right"
+                android:background="@drawable/round_button_right"
+                android:layout_toLeftOf="@+id/done"
+                android:layout_marginRight="40dp"
+
+                />
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:id="@+id/r_left"
+                android:layout_toRightOf="@+id/gal"
+                android:background="@drawable/round_button_left"
+
+                android:layout_marginLeft="40dp"
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prog"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

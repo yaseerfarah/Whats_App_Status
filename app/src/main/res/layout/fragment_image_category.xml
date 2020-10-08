@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ImageCategory"
+    android:background="@mipmap/unnamed"
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/cat_recycle"/>
+
+
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="إختر 4 صور"
+
+          android:textColor="@android:color/white"
+          android:id="@+id/to_crop"
+          android:background="@drawable/round_button2"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="30dp"
+          android:layout_marginRight="@dimen/round_button_margin_right"
+
+
+          android:padding="10dp"
+          />
+
+
+   </RelativeLayout>
+
+
+</FrameLayout>

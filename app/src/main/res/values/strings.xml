@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">حالات واتسابي</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_sticker">ملصقاتي</string>
+    <string name="add_4_img">إختر 4 صور</string>
+    <string name="confirm_img">تأكيد الصور</string>
+    <string name="made_by">إصنع بنفسك</string>
+    <string name="already_pick">لقد إخترت 4 صور بالفعل</string>
+    <string name="press_again">إضغط مرة اخرى</string>
+    <string name="add_to_whatsappَ">أضف إلى واتساب</string>
+    <string name="check_your_connection">تحقق من اتصالك</string>
+    <string name="try_again">حاول مرة اخرى</string>
+
+
+    <string name="authority" translatable="false">yaseerfarah22.com.whatsappsticker_2.fileProvider</string>
+
+
+</resources>

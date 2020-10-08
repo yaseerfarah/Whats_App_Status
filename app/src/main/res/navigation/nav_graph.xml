@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/parentCategory">
+
+    <action android:id="@+id/action_global_whatsAppStatus2" app:destination="@id/whatsAppStatus2"/>
+
+    <fragment
+        android:id="@+id/imageCategory"
+        android:name="yaseerfarah22.com.whatsappsticker_2.View.ImageCategory"
+        android:label="fragment_image_category"
+        tools:layout="@layout/fragment_image_category" >
+        <action
+            android:id="@+id/action_imageCategory_to_categoryDetails"
+            app:destination="@id/categoryDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="yaseerfarah22.com.whatsappsticker_2.View.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_parentCategory"
+            app:destination="@id/parentCategory" />
+        <action
+            android:id="@+id/action_home2_to_addSticker"
+            app:destination="@id/addSticker" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryDetails"
+        android:name="yaseerfarah22.com.whatsappsticker_2.View.CategoryDetails"
+        android:label="fragment_category_details"
+        tools:layout="@layout/fragment_category_details" >
+        <action
+            android:id="@+id/action_categoryDetails_self"
+            app:destination="@id/categoryDetails" />
+        <action
+            android:id="@+id/action_categoryDetails_to_addSticker"
+            app:destination="@id/addSticker" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSticker"
+        android:name="yaseerfarah22.com.whatsappsticker_2.View.AddSticker"
+        android:label="fragment_add_sticker"
+        tools:layout="@layout/fragment_add_sticker" >
+        <action
+            android:id="@+id/action_addSticker_to_cropImage"
+            app:destination="@id/cropImage" />
+    </fragment>
+    <fragment
+        android:id="@+id/cropImage"
+        android:name="yaseerfarah22.com.whatsappsticker_2.View.CropImage"
+        android:label="fragment_crop_image"
+        tools:layout="@layout/fragment_crop_image" />
+    <fragment
+        android:id="@+id/parentCategory"
+        android:name="yaseerfarah22.com.whatsappsticker_2.View.ParentCategory"
+        android:label="fragment_parent_category"
+        tools:layout="@layout/fragment_parent_category" >
+        <action
+            android:id="@+id/action_parentCategory_to_imageCategory"
+            app:destination="@id/imageCategory" />
+        <action
+            android:id="@+id/action_parentCategory_to_addSticker"
+            app:destination="@id/addSticker" />
+        <action
+            android:id="@+id/action_parentCategory_to_categoryDetails"
+            app:destination="@id/categoryDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/whatsAppStatus2"
+        android:name="yaseerfarah22.com.whatsappsticker_2.View.WhatsAppStatus"
+        android:label="fragment_whats_app_status"
+        tools:layout="@layout/fragment_whats_app_status" />
+
+
+</navigation>
